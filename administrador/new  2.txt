@@ -1,0 +1,18 @@
+$txtConsulta= "INSERT INTO f_medica (G_SANGRE, F_RH, SUF_HERNIAS, ESP_HERNIAS, SUF_TENSION, ESP_TENSION, SUF_ALERGIAS, ESP_ALERGIAS, SUF_FRACTURAS, ESP_FRACTURAS, CI, FARMACO1, DOSIS1, FREC1, FARMACO2, DOSIS2, FREC2) VALUES(
+'".$FRM['sangre']."',
+'".$FRM['factorrh']."',
+'".$FRM['hernias']."',
+'".$SUF_HERN."',
+'".$FRM['tension']."',
+'".$FRM['vtension']."',
+'".$FRM['alergias']."',
+'".$SUF_ALERGIAS."',
+'".$FRM['fractura']."',
+'".$SUF_FRACTURAS."',
+".$FRM['CEDULAM'].",
+'".$FRM['esp9']."',
+".$FRM['dosis1'].",
+".$FRM['frph1'].",
+'".$FRM['esp10']."',
+".$FRM['dosis2'].",
+".$FRM['frph2'].")";

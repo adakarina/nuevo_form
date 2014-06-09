@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from themedesigner.in/demo/maruti-admin/form-common.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 14 Aug 2013 10:58:44 GMT -->
+<head>
+<title>Grupo de Rescate TIUNA</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="../css/bootstrap.min.css" />
+<link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="../css/colorpicker.css" />
+<link rel="stylesheet" href="../css/datepicker.css" />
+<link rel="stylesheet" href="../css/uniform.css" />
+<link rel="stylesheet" href="../css/select2.css" />
+<link rel="stylesheet" href="../css/maruti-style.css" />
+<link rel="stylesheet" href="../css/maruti-media.css" class="skin-color" />
+</head>
+<body>
+<!--
+Ok, fijate que los formularios originales estan bien bonitos
+-->
+<!--Header-part-->
+<div id="header">
+  <h1><a href="../dashboard.html">Maruti Admin</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-messaages-->
+<div class="btn-group rightzero"> <a class="top_message tip-left" title="Manage Files"><i class="icon-file"></i></a> <a class="top_message tip-bottom" title="Manage Users"><i class="icon-user"></i></a> <a class="top_message tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a> <a class="top_message tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a> </div>
+<!--close-top-Header-messaages--> 
+
+<!--top-Header-menu-->
+<!--<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li class="" ><a title="" href="../#"><i class="icon icon-user"></i> <span class="text">Profile</span></a></li>
+    <li class=" dropdown" id="menu-messages"><a href="../#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">Messages</span> <span class="label label-important">5</span> <b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li><a class="sAdd" title="" href="../#">new message</a></li>
+        <li><a class="sInbox" title="" href="../#">inbox</a></li>
+        <li><a class="sOutbox" title="" href="../#">outbox</a></li>
+        <li><a class="sTrash" title="" href="../#">trash</a></li>
+      </ul>
+    </li>
+    <li class=""><a title="" href="../#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
+    <li class=""><a title="" href="../login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+<div id="search"> -->
+  <input type="text" id='input-busqueda' name="input-busqueda" placeholder="Search here..."/>
+  <button type="submit" class="tip-left" title="Search"><i class="icon-search icon-white"></i></button>
+</div>
+
+<!--close-top-Header-menu--> 
+<!--left-menu-stats-sidebar-->
+<div id="sidebar">
+  <div id="search">
+<form id='formulario-busqueda' name="formulario-busqueda">
+    <input type="text" id='input-busqueda' name="input-busqueda" placeholder="Search here..."/>
+    <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+ </form>
+  </div>
+  <a href="../#" class="visible-phone"><i class="icon icon-th-list"></i> Common Elements</a><ul>
+    <li class="active"><a href="../index-2.html"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
+    <li> <a href="../charts.html"><i class="icon icon-signal"></i> <span>Charts &amp; graphs</span></a> </li>
+    <li> <a href="../widgets.html"><i class="icon icon-inbox"></i> <span>Widgets</span></a> </li>
+    <li><a href="../tables.html"><i class="icon icon-th"></i> <span>Tables</span></a></li>
+    <li><a href="../grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+    <li class="submenu"> <a href="../#"><i class="icon icon-th-list"></i> <span>Forms</span> <span class="label label-important">3</span></a>
+      <ul>
+        <li><a href="../form-common.html">Basic Form</a></li>
+        <li><a href="../form-validation.html">Form with Validation</a></li>
+        <li><a href="../form-wizard.html">Form with Wizard</a></li>
+      </ul>
+    </li>
+    <li><a href="../buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
+    <li><a href="../interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
+    <li class="submenu"> <a href="../#"><i class="icon icon-file"></i> <span>Addons</span> <span class="label label-important">4</span></a>
+      <ul>
+        <li><a href="../index2.html">Dashboard2</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../calendar.html">Calendar</a></li>
+        <li><a href="../chat.html">Chat option</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+<!--close-left-menu-stats-sidebar-->
+
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="../index-2.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="../#" class="tip-bottom"> Registro</a> <a href="../#" class="current">Formulario de Registro</a> </div>
+    <h1>Formulario de Registro</h1>
+  </div>
+  <div class="container-fluid">
+  <!-- Esta capa contiene los dos primeros formularios, derecha e izquierda -- Conservando igual esa forma de derecha - izquierda?
+	si tu quieres, sino no! -- Es que eso era lo que queria! Despues fue que lo eche a perder xD
+		ajajajjaa, conservaremos derecha e izquierda
+  -->
+    <div class="row-fluid">
+	<!-- Aqui comenzara Datos personales -->
+	
+	
+	
+	
+	
+      <div class="span6"> <!-- Aqui comienza el cuadro izquierdo -->
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+            <h5>Datos Personales</h5>
+          </div>
+          <div id="form_izq" class="widget-content nopadding">
+            <form id="frmDatosPersonales"  action="" method="post" class="form-horizontal">
+			     <input name="identificador" id="identificador" type="hidden" value="personales"/> <!--Identificador oculto Para cada formulario-->
+			<!-- Caja de texto-->  
+              <div class="control-group">
+                <label class="control-label">Nombres :</label>
+                <div class="controls">
+                  <input name="nombre" id="nombre" type="text" class="span11" placeholder="Ingrese nombre(s)" readonly />
+                </div>
+              </div>
+			  
+			  <!-- Caja de texto-->
+              <div class="control-group">
+                <label class="control-label">Apellidos :</label>
+                <div class="controls">
+                  <input name="apellido" id="apellido" type="text" class="span11" placeholder="Ingrese Apellido (s)" readonly />
+                </div>
+              </div>
+			  
+			  <!-- Caja de texto-->
+              <div class="control-group">
+                <label class="control-label">Cedula :</label>
+                <div class="controls">
+                  <input name="ci" id="ci" type="text" class="span11" placeholder="Documento de Identidad" readonly />
+                </div>
+              </div>
+			  
+			  <!-- Caja de texto-->
+              <div class="control-group">
+                <label class="control-label">Telefono :</label>
+                <div class="controls">
+                  <input name="tlf" id="tlf" type="text" class="span11" placeholder="Numero de Telefono Principal" readonly />
+                </div>
+              </div>
+			  <div class="control-group">
+                <label class="control-label">Telefono de Emergencia:</label>
+                <div class="controls">
+                  <input name="tlfemerg" id="tlfemerg" type="text" class="span11" placeholder="Numero de Telefono de emergencia" readonly />
+                </div>
+              </div>
+			  
+ 
+				<!-- Lista -->
+              <div class="control-group">
+                <label class="control-label">Lugar de Nacimiento:</label>
+                <div class="controls">
+                  <input type="text" name="lugarnac" id="lugarnac" readonly >
+                </div>
+              </div>
+
+			  <!-- Titulo -->
+              <div class="control-group">
+                <label class="control-label">Fecha de Nacimiento:</label>
+              </div>
+			  
+			  <!-- Lista -->
+              <div class="control-group">
+                <label class="control-label">Dia:</label>
+                <div class="controls">
+                  <input type="text" name="dianac" id="dianac" readonly >
+                </div>
+              </div>
+			  
+			  
+			  
+			  <!-- Lista -->
+              <div class="control-group">
+                <label class="control-label">Mes:</label>
+                <div class="controls">
+                  <input type="text" name="mesnac" id="mesnac" readonly >
+                </div>
+              </div>
+			  
+			  
+			  <!-- Lista -->
+              <div class="control-group">
+                <label class="control-label">Año:</label>
+                <div class="controls">
+                  <input type="text" name="anionac" id="anionac" readonly >
+                </div>
+              </div>
+			  
+			  
+			  <!-- caja de texto -->
+              <div class="control-group">
+                <label class="control-label">Email :</label>
+                <div class="controls">
+                  <input name="email" id="email" type="text" class="span11" placeholder="Dirección de Correo Electrónico" readonly />
+                </div>
+              </div>
+			  
+			  
+			  <!-- caja de texto -->
+              <div class="control-group">
+                <label class="control-label">Facebook :</label>
+                <div class="controls">
+                  <input name="fb" id="fb" type="text" class="span11" placeholder="Página de Facebook si posee" readonly />
+                </div>
+              </div>
+			  
+			  
+			 
+			 <!-- text area -->
+              <div class="control-group">
+                <label class="control-label">Direccion de domicilio:</label>
+                <div class="controls">
+                  <textarea name="direccion" id="direccion" class="span11" readonly 	></textarea>
+                </div>
+              </div>
+			  
+			  
+			  
+              <div class="form-actions">
+                <button id="btnDatosPersonales" name="btnDatosPersonales" type="button" class="btn btn-success">Aceptar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div> <!-- aqui finaliza el cuadro izquierdo -->
+	  <!-- Aqui finalizara Datos personales -->
+	  
+	  
+	  
+	  
+	  <!-- Fijate en como se desglosa el codigo, revisa -- Es que sabiendo donde empieza/termina el guaguanco este es mas facil.! :O te quedo bonito :
+	  Ok, pero es bueno que revisaras tu primero, ahora como te mostré ya sabras como revisar el código
+	  
+	  O sea, el codigo 	que viene para los demas formularios, de hecho, puedes sacar a parte cada codigo, así como yo los separe con espacios
+	  para que seapas que es cada cosa
+	  
+	  D -->
+	  
+	  
+	  
+	  
+	  
+	  
+      <div class="span6">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+            <h5>Ficha Médica</h5>
+          </div>
+          <div id="divForm2" class="widget-content nopadding">
+            <form id="form_der" action="#" method="post" class="form-horizontal">
+			<input name="identificador" id="identificador" type="hidden" value="medica"/>
+			<input name="CEDULAM" id="CEDULAM" type="text" value=""/>
+			<!-- Comienza selector-->
+              <div class="control-group">
+                <label class="control-label">Tipo de Sangre</label>
+                <div class="controls">
+                  <select name ="sangre" id="sangre">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>AB</option>
+                    <option>O</option>
+                  </select>
+                </div>
+              </div>
+			  
+			  <div class="control-group">
+                <label class="control-label">Factor RH</label>
+                <div class="controls">
+                  <label>
+                    <input type="radio" name="factorrh" id="factorrh" value="+" />
+                    +</label>
+                  <label>
+                    <input type="radio" name="factorrh" id="factorrh" value="-"/>
+                    -</label>
+                </div>
+              </div>
+			  
+			  
+			  <!--Cajas de chequeo-->
+              <div class="control-group">
+                <label class="control-label">Indique si posee:</label>
+                <div class="controls">
+                  <label>
+                    <input name="hernias" id="hernias" type="checkbox" value="hernias" />
+                    Hernias</label>
+						<div class="control-group">
+                <label class="control-label">Especifique Hernias:</label>
+                <div class="controls">
+                  <label>
+                    <input type="checkbox" name="id" id="id" value="Inguinal Directa" />
+                    Inguinal Directa</label>
+                  <label>
+                    <input type="checkbox" name="ii" id="ii" value="Inguinal Indirecta" />
+                    Inguinal Indirecta</label>
+                  <label>
+                    <input type="checkbox" name="fem" id="fem" value="Femoral"/>
+                    Femoral</label>
+					<label>
+                    <input type="checkbox" name="inc" id="inc" value="Incisional"/>
+                    Incisional</label>
+					<label>
+                    <input type="checkbox" name="umb" id="umb" value="Umbilical"/>
+                    Umbilical</label>
+					<label>
+                    <input type="checkbox" name="epig" id="epig" value="Epigastrica"/>
+                    Epigástrica</label>
+                </div>
+				<div class="control-group">
+                <label class="control-label">Otro :</label>
+                <div class="controls">
+                  <input name = "otro" id= "otro" type="text" class="span11" placeholder="Especifique" value="" />
+                </div>
+              </div>
+              </div>
+                  <label>
+                    <input name="alergias" id="alergias" type="checkbox" value="alergias"/>
+                    Alergias :</label>
+					<div class="control-group">
+                <label class="control-label">Especifique :</label>
+                <div class="controls">
+                  <input name="esp1" id="esp1" type="text" class="span11" placeholder="Especifique"  />
+				  <input name="esp2" id="esp2" type="text" class="span11" placeholder="Especifique" />
+				  <input name="esp3" id="esp3" type="text" class="span11" placeholder="Especifique" />
+				  <input name="esp4" id="esp4" type="text" class="span11" placeholder="Especifique" />
+                </div>
+              </div>
+			  <label>
+                    <input name="fract" id="fract" type="checkbox" value="fractura" />
+                    Fracturas :</label>
+					<div class="control-group">
+                <label class="control-label">Especifique :</label>
+                <div class="controls">
+                  <input name="esp5" id="esp5" type="text" class="span11" placeholder="Especifique"  />
+				  <input name="esp6" id="esp6" type="text" class="span11" placeholder="Especifique" />
+				  <input name="esp7" id="esp7" type="text" class="span11" placeholder="Especifique"  />
+				  <input name="esp8" id="esp8" type="text" class="span11" placeholder="Especifique"  />
+                </div>
+              </div>
+                  <label>
+                    <input name="tension" id="tension" type="checkbox" value="tension" />
+                    Tensión Arterial</label>
+					<div class="control-group">
+                <label class="control-label">Especifique :</label>
+                <div class="controls">
+                  <label>
+                    <input type="radio" name="vtension" id="vtension" value="Tension Alta" />
+                    Tensión Alta</label>
+                  <label>
+                    <input type="radio" name="vtension" id="vtension" value="Tension Baja" />
+                    Tensión Baja</label>
+                </div>
+              </div>
+              </div>
+			  		
+					
+					<div class="control-group">
+                <label class="control-label">Especifique si ingiere algún fármaco:</label>
+                <div class="controls">
+                  <input name="esp9" id="esp9" type="text" class="span11" placeholder="Especifique" />
+				  <div class="control-group">
+                <label class="control-label">Indique Dosis Por unidad</label>
+                <div class="controls">
+                  <select name="dosis1" id="dosis1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </div>
+			  <div class="control-group">
+                <label class="control-label">Frecuencia por hora :</label>
+                <div class="controls">
+                  <label>
+                    <input type="radio" name="frph1" id="frph1" value="6" />
+                    6</label>
+                  <label>
+                    <input type="radio" name="frph1" id="frph1" value="8"/>
+                    8</label>
+					<label>
+                    <input type="radio" name="frph1" id="frph1" value="10"/>
+                    10</label>
+					<label>
+                    <input type="radio" name="frph1" id="frph1" value="12"/>
+                    12</label>
+                </div>
+              </div>
+				  <input name="esp10" id="esp10" type="text" class="span11" placeholder="Especifique" />
+				  <div class="control-group">
+                <label class="control-label">Indique Dosis Por unidad</label>
+                <div class="controls">
+                  <select name="dosis2" id="dosis2" >
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                  </select>
+                </div>
+              </div>
+			  <div class="control-group">
+                <label class="control-label">Frecuencia por hora :</label>
+                <div class="controls">
+                  <label>
+                    <input type="radio" name="frph2" id="frph2" value="6" />
+                    6</label>
+                  <label>
+                    <input type="radio" name="frph2" id="frph2" value="8"/>
+                    8</label>
+					<label>
+                    <input type="radio" name="frph2" id="frph2" value="10"/>
+                    10</label>
+					<label>
+                    <input type="radio" name="frph2" id="frph2" value="12"/>
+                    12</label>
+                </div>
+              </div>
+                </div>
+                </div>
+			  
+			  <!--Explorador de Archivos->
+              <div class="control-group">
+                <label class="control-label">File upload input</label>
+                <div class="controls">
+                  <input type="file" />
+                </div>
+              </div>
+			  
+			  <!--Habilitar Texto->
+              <div class="control-group">
+                <label class="control-label">Disabled Input</label>
+                <div class="controls">
+                  <input type="text" placeholder="You can't type anything…" disabled="" class="span11">
+                </div>
+              </div>
+			  -->
+			  
+              <div class="form-actions">
+                <button name="btnMedica" id="btnMedica" type="button" class="btn btn-success">Aceptar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div><hr>
+    <div class="row-fluid">
+	
+		<!--Siguiente Formulario-->
+      <div class="span6"> <!-- Aqui comienza el cuadro izquierdo -->
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+            <h5>Estudios Académicos</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <form id="frm_down" action="" method="post" class="form-horizontal">
+			<input name="identificador" id="identificador" type="hidden" value="estudios"/>
+			<input name="CEDULAE" id="CEDULAE" type="text" value=""/>
+			
+			<!-- Caja de texto-->  
+              <div class="control-group">
+                <label class="control-label">Escuela(s) Primaria :</label>
+                <div class="controls">
+                  <input name="prim1" id="prim1" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+				  <input name="prim2" id="prim2" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+				  <input name="prim3" id="prim3" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+                </div>
+              </div>
+			  
+			  <!-- Caja de texto-->  
+              <div class="control-group">
+                <label class="control-label">Escuela(s) Secundaria :</label>
+                <div class="controls">
+                  <input name="sec1" id="sec1" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+				  <input name="sec2" id="sec2" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+				  <input name="sec3" id="sec3" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+                </div>
+				<!-- Caja de texto-->  
+              <div class="control-group">
+                <label class="control-label">Título Obtenido :</label>
+                <div class="controls">
+                  <input name="titulo1" id="titulo1" type="text" class="span11" placeholder=" " />
+                </div>
+              </div>
+              </div>
+			  
+			  <!-- Caja de texto-->  
+              <div class="control-group">
+                <label class="control-label">Instituto(s) Universitario :</label>
+                <div class="controls">
+                  <input name="univ1" id="univ1" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+				  <input name="univ2" id="univ2" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+				  <input name="univ3" id="univ3" type="text" class="span11" placeholder="Ingrese nombre(s)" />
+                </div>
+				<!-- Caja de texto-->  
+              <div class="control-group">
+                <label class="control-label">Título(s) Obtenido(s) :</label>
+                <div class="controls">
+                  <input name="titulo2" id="titulo2" type="text" class="span11" placeholder=" " />
+				  <input name="titulo3" id="titulo3" type="text" class="span11" placeholder=" " />
+				  <input name="titulo4" id="titulo4" type="text" class="span11" placeholder=" " />
+                </div>
+              </div>
+              </div>
+              <div class="form-actions">
+                <button name="btnEstudios" id="btnEstudios" type="button" class="btn btn-success">Aceptar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+	  
+
+    </div>
+  </div>
+</div>
+</div>
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2014 &copy; UNEFA Aragua - Nucleo Maracay Servicio Comunitario. Desarrolladores: Vera - Marrero - Perez - Tovar. IX Semestre Ing. De Sistemas </div>
+</div>
+<script src="../js/jquery.min.js"></script> 
+<script src="script_propio.js"></script> 
+<script src="../js/jquery.ui.custom.js"></script> 
+<script src="../js/bootstrap.min.js"></script> 
+<script src="../js/bootstrap-colorpicker.js"></script> 
+<script src="../js/bootstrap-datepicker.js"></script> 
+<script src="../js/jquery.uniform.js"></script> 
+<script src="../js/select2.min.js"></script> 
+<script src="../js/maruti.js"></script> 
+<script src="../js/maruti.form_common.js"></script>
+<script src="../js/busqueda.js"></script>
+</body>
+
+<!-- Mirrored from themedesigner.in/demo/maruti-admin/form-common.html by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 14 Aug 2013 10:58:47 GMT -->
+</html>
